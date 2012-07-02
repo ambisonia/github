@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" 
+  android:orientation="vertical">
+  
+  <EditText android:text="" android:id="@+id/etInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text"></EditText>
+  
+  <!-- parallel layout of headings -->
+  <LinearLayout 
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content" 
+	  android:orientation="horizontal">
+	  <TextView android:text="Gravity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="50"></TextView>
+	  <TextView android:text="Style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="50"></TextView>
+  </LinearLayout>
+  
+  <!-- parallel layout of radio buttons -->
+  <LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content" 
+	  android:orientation="horizontal" android:weightSum="1">
+  
+	  <RadioGroup
+	  	  android:id="@+id/rgGravity"
+		  android:orientation="vertical"
+		  android:layout_height="wrap_content" android:layout_width="162dp">
+	  
+		  <RadioButton android:text="Left" android:id="@+id/rbLeft" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		  <RadioButton android:text="Centre" android:id="@+id/rbCentre" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		  <RadioButton android:text="Right" android:id="@+id/rbRight" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	  </RadioGroup>
+  
+	  <RadioGroup
+	  	  android:id="@+id/rgStyle"
+		  android:orientation="vertical"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  <RadioButton android:text="Normal" android:id="@+id/rbNormal" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		  <RadioButton android:text="Bold" android:id="@+id/rbBold" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		  <RadioButton android:text="Italic" android:id="@+id/rbItalic" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	  </RadioGroup>
+  
+  </LinearLayout>
+  
+  <TextView android:textSize="15dp" android:id="@+id/tvGetInput" android:text="Enter Something and Click OK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"></TextView>
+  <Button android:text="OK" android:id="@+id/bOK" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

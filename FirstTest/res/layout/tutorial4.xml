@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView android:text="Save Songs to Phone by Holding the Play Button"
+		android:id="@+id/tvMessage" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center"></TextView>
+
+	<RadioGroup android:id="@+id/groupMusic"
+		android:orientation="vertical" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<RadioButton android:text="Song 1" android:id="@+id/rbMusic1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="Song 2" android:id="@+id/rbMusic2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="Song 3" android:id="@+id/rbMusic3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="Song 4" android:id="@+id/rbMusic4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+
+	</RadioGroup>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="match_parent">
+		<Button android:id="@+id/bPlay" android:layout_width="wrap_content"
+			android:text="Play" android:layout_height="wrap_content"></Button>
+		<Button android:text="Stop" android:id="@+id/bStop"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="Delete" android:id="@+id/bDelete"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+</LinearLayout>

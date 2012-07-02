@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<ImageView android:id="@+id/ivDisplay" android:layout_height="200dp"
+		android:layout_width="200dp" android:src="@drawable/back_fish"></ImageView>
+
+	<Button android:text="Set Wallpaper" android:id="@+id/bSetWallpaper"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+<HorizontalScrollView 
+android:layout_width="200dp"
+android:layout_height="wrap_content"
+android:layout_gravity="center">
+
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation= "horizontal">
+
+    <ImageView android:layout_height="125dp" android:layout_width="125dp" android:padding="15dp" android:src="@drawable/back_smoke" android:id="@+id/ivImage1"></ImageView>
+    <ImageView android:layout_height="125dp" android:layout_width="125dp" android:padding="15dp" android:src="@drawable/back_fish" android:id="@+id/ivImage2"></ImageView>
+		
+	<ImageView android:id="@+id/ivImage3" android:layout_height="125dp"
+		android:src="@drawable/back_bmw" android:layout_width="125dp"
+		android:padding="15dp"></ImageView>
+		
+	<ImageView android:id="@+id/ivImage4" android:layout_height="125dp"
+		android:src="@drawable/back_andy" android:layout_width="125dp"
+		android:padding="15dp"></ImageView>
+
+</LinearLayout>
+		
+</HorizontalScrollView>
+
+</LinearLayout>
