@@ -39,7 +39,7 @@ public class tutorialThree extends Activity implements OnClickListener{
 		
 		toPhone = R.drawable.back_smoke; //initializing it to first point to back_smoke
 		
-		//set when clicked to goto "onClick" method, implemented by OnClickListner
+		//set when clicked to goto "onClick" method, implemented from OnClickListner
 		image1.setOnClickListener(this);	
 		image2.setOnClickListener(this);
 		image3.setOnClickListener(this);
